@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llhoriz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111425"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblTitular5"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="183dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:text="Rentacar"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="#FDFDFD"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTitular"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="183dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:text="Alquiler"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFC107"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="#FDFDFD"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitular5"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/lblTitular4"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="187dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="de autos"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/lblTitular"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitular5" />
+
+    <TextView
+        android:id="@+id/lblTitular3"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="370dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:text="en Costa Rica"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#F4F4F4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitular" />
+
+    <LinearLayout
+        android:id="@+id/contenedor"
+        android:layout_width="413dp"
+        android:layout_height="139dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitular3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="415dp"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/mercedez" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="275dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#252524"
+        android:ems="10"
+        android:hint="@string/lblCorreo"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#989897"
+        app:layout_constraintEnd_toEndOf="@+id/contenedor"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/contenedor"
+        app:layout_constraintTop_toBottomOf="@+id/contenedor" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="277dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#252524"
+        android:ems="10"
+        android:hint="@string/lblPassword"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#989897"
+        app:layout_constraintEnd_toEndOf="@+id/txtCorreo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:scrollY="100dp"
+        android:text="@string/btnInciar"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="137dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:background="#2196F3"
+        android:scrollY="100dp"
+        android:text="@string/btnRegistrarse"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btnIniciar"
+        app:layout_constraintStart_toStartOf="@+id/btnIniciar"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

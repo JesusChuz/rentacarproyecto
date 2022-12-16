@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232B53">
+
+    <TextView
+        android:id="@+id/lblDetallesAdicionales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="Detalles Adicionales"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFC107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F8F4F4"
+        app:layout_constraintStart_toStartOf="@+id/lblDetallesAdicionales"
+        app:layout_constraintTop_toBottomOf="@+id/lblDetallesAdicionales" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="234dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/lblDetallesAdicionales"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/lblDetallesAdicionales"
+        app:layout_constraintTop_toBottomOf="@+id/tvModelo"
+        app:srcCompat="@drawable/bmw" />
+
+    <LinearLayout
+        android:id="@+id/layoutinfo"
+        android:layout_width="339dp"
+        android:layout_height="293dp"
+        android:layout_marginTop="4dp"
+        android:background="#1F2445"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <TextView
+            android:id="@+id/lblEspecificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Especificaciones"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#7D50FB" />
+
+        <TextView
+            android:id="@+id/lblMarcha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="text view"
+            android:textColor="#FAFAFA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblPasajeros"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="text view"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/lblPasajeros2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="pasajeros"
+                android:textColor="#FAFAFA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblPuertas"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="text view"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/lblPuertas2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="puertas"
+                android:textColor="#FAFAFA" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblMaletero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Maletero espacioso"
+            android:textColor="#FAFAFA" />
+
+        <TextView
+            android:id="@+id/lblExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambien incluye"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#7D50FB" />
+
+        <TextView
+            android:id="@+id/lblRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Radio estereo AM/FM"
+            android:textColor="#FAFAFA" />
+
+        <TextView
+            android:id="@+id/lblaire"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="text view"
+            android:textColor="#FAFAFA" />
+
+        <TextView
+            android:id="@+id/lblBolsas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Bolsas de aire"
+            android:textColor="#FAFAFA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1F2445"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblPrecio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Precio: "
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/lblPrecio"
+                android:layout_width="272dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="text view"
+                android:textColor="#FAFAFA" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReservar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#2196F3"
+        android:text="Reservar"
+        app:layout_constraintEnd_toEndOf="@+id/layoutinfo"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/layoutinfo"
+        app:layout_constraintTop_toBottomOf="@+id/layoutinfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vistaFila"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#232B53"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232B53"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="706dp"
+            android:background="#232B53"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/tv_modelo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#989897"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_imagen"
+                android:layout_width="157dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_modelo"
+                app:srcCompat="@drawable/bmw"  />
+
+            <LinearLayout
+                android:layout_width="84dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="44dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/iv_imagen"
+                app:layout_constraintTop_toBottomOf="@+id/tv_modelo">
+
+                <ImageView
+                    android:id="@+id/img_precio"
+                    android:layout_width="24dp"
+                    android:layout_height="22dp"
+                    app:srcCompat="@drawable/ic_precio" />
+
+                <TextView
+                    android:id="@+id/tv_precio"
+                    android:layout_width="54dp"
+                    android:layout_height="match_parent"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textColorHint="#989897" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="377dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_imagen">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_pasajeros"
+                    android:layout_width="24dp"
+                    android:layout_height="22dp"
+                    app:srcCompat="@drawable/ic_baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/tv_pasajeros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textColorHint="#989897" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_puertas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_sensor_door_24" />
+
+                <TextView
+                    android:id="@+id/tv_puertas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textColorHint="#989897" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_marchas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#989897"
+                    app:srcCompat="@drawable/ic_baseline_directions_car_24" />
+
+                <TextView
+                    android:id="@+id/tv_marchas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textColorHint="#989897" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/img_aire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_air_24" />
+
+                <TextView
+                    android:id="@+id/tv_aire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textColorHint="#989897" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
